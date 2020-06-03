@@ -4,9 +4,17 @@ import styles from "./BuildControl.css";
 const BuildControl = (props) => {
   return (
     <div className={styles.BuildControl}>
-      <div className={styles.Label}></div>
-      <button className={styles.Less}>Less</button>
-      <button className={styles.More}>More</button>
+      <div className={styles.Label}>{props.label}:</div>
+      <button
+        className={styles.Less}
+        disabled={props.disabled}
+        onClick={props.removed}
+      >
+        Remove
+      </button>
+      <button className={styles.More} onClick={props.added}>
+        Add
+      </button>
     </div>
   );
 };
