@@ -23,10 +23,10 @@
   background: #28a7456e;
 }
 .Danger {
-  color: #dc354578;
+  color: #dc3545;
 }
 .Danger:hover {
-  background: #ff9aa4;
+  background: #dc354578;
 }
 .Info {
   color: #17a2b8;
